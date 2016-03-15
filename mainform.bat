@@ -1,0 +1,1 @@
+C:\Users\YarushinNA\Panda3D-1.9.1\python\python.exe mainform.py
