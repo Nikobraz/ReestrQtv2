@@ -56,9 +56,8 @@ class MainWindow(QMainWindow):
             self.ui.plainTextEdit.appendPlainText(row)
 
         for i in files:
-            f = open(i, 'r').readlines()[1]
+            f = open(i, 'r').readlines()[1].lstrip('# ').split(' ')[0]
             f = unicode(f, 'cp866')
-            f = f.lstrip('# ').split(' ')[0]
             self.ui.listWidget.setToolTip(i)
             self.ui.listWidget.addItem(os.path.basename(i) + '    ' + f)
 
