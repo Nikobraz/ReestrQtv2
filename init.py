@@ -5,9 +5,9 @@ import time
 import sys
 
 
-def get_summ(month, den, god, usluga):
+def get_summ(month, day, year, service):
     """Сумма реестров"""
-    return sum([float(open(i, 'r').readlines()[1].lstrip('# ').split(' ')[0]) for i in get_filelist(month, den, god, usluga)])
+    return sum([float(open(i, 'r').readlines()[1].lstrip('# ').split(' ')[0]) for i in get_filelist(month, day, year, service)])
 
 
 def get_filelist(month, day, year, service):

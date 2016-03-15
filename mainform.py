@@ -23,6 +23,7 @@ class MainWindow(QMainWindow):
         self.ui = None
 
     def dclickedfilelist(self, item):
+        """Слот отрабатывает по даблклмку на файлсписке"""
         print item.toolTip()
 
     def changedpage(self):
